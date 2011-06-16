@@ -76,7 +76,10 @@ class NoConflictMode implements Renderer
      */
     public function getNoConflictModeHandler()
     {
-        return $this->_noConflictModeHandler;
+        if($this->getNoConflictMode())
+            return $this->_noConflictModeHandler;
+        else
+            return "$";
     }
     
     /**

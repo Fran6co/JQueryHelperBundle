@@ -20,6 +20,11 @@ use WC\JQueryHelperBundle\JQuery\Api as jQueryApi,
  */
 class jQueryExtension extends \Twig_Extension
 {
+    protected $jqueryApi;
+
+    public function __construct($jqueryApi){
+        $this->jqueryApi = $jqueryApi;
+    }
     /**
      * Returns the token parser instance to add to the existing list.
      *
@@ -41,5 +46,9 @@ class jQueryExtension extends \Twig_Extension
     public function getName()
     {
         return 'jquery';
+    }
+
+    public function getApi(){
+        return $this->jqueryApi;
     }
 }

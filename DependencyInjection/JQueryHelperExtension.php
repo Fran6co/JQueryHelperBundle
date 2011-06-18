@@ -33,7 +33,7 @@ class JQueryHelperExtension extends Extension
     {
         // load default config
         $fileLocator = new FileLocator(__DIR__.'/../Resources/config');
-        $defaultConfig = Yaml::load($fileLocator->locate('default.yml'));
+        $defaultConfig = Yaml::parse($fileLocator->locate('default.yml'));
 
         // build main config
         foreach ($configs as $config) {

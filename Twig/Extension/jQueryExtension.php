@@ -11,7 +11,7 @@
 namespace WC\JQueryHelperBundle\Twig\Extension;
 
 use WC\JQueryHelperBundle\JQuery\Api as jQueryApi,
-    WC\JQueryHelperBundle\Twig\TokenParser\JQueryTokenParser;
+    WC\JQueryHelperBundle\Twig\TokenParser\jQueryTokenParser;
 
 /**
  * Twig Extension for jQuery support.
